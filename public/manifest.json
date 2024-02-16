@@ -1,0 +1,18 @@
+{
+    "name": "Systembolaget Untappd",
+    "description": "Detta plugin länkar bärs på bolaget till untappd-recensioner",
+    "version": "1.0",
+    "manifest_version": 3,
+    "host_permissions": [ "https://*.algolia.net/*" ],
+    "content_scripts": [
+        {
+            "matches": [ "https://www.systembolaget.se/*" ],
+            "js": [ "contentScript.js" ]
+        }
+    ],
+    "action": {},
+    "permissions": [
+       "activeTab",
+       "scripting"
+    ]
+ }
